@@ -1,0 +1,149 @@
+* {box-sizing: border-box}
+
+*::after {box-sizing: border-box}
+
+*::before {box-sizing: border-box}
+
+* {padding: 0;margin: 0}
+
+body {
+  background: rgb(246, 246, 246);
+}
+
+main {
+  background: white;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+input, textarea {
+  border: none;
+}
+
+:focus {
+  outline: none;
+}
+
+.span1::before {
+  content: '* ';
+  color: red;
+}
+
+.title1 {
+  background: rgb(109, 151, 185);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60px;
+}
+
+.title-main {
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.title-aside {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.3em;
+}
+
+.label1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 14px;
+}
+
+.input1 {
+  width: 100%;
+  height: 32px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
+}
+
+.span1 .span2 {
+  white-space: nowrap;
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.table-wrapper {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
+  margin-left: 14px;
+  padding-bottom: 16px;
+  padding-right: 16px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+table th {
+  border-right: 1px solid #000;
+  height: 32px;
+}
+
+table th:last-child {
+  border-right: none;
+}
+
+table td {
+  text-align: center;
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+}
+
+table td:last-child {
+  border-right: 0;
+}
+
+.single-word {
+  color: red;
+}
+
+.count-wrapper {
+  color: #b2b2b2;
+  text-align: right;
+  padding-right: 8px;
+}
+
+footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button {
+  width: 100%;
+  height: 42px;
+  border: none;
+  font-size: 18px;
+  border-radius: 4px;
+  background: rgb(108, 150, 188);
+  color: white;
+  letter-spacing: 0.5em;
+}
+.backdrop{
+  display: none;
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+/*# sourceMappingURL=style.2ee1bbd8.css.map */
